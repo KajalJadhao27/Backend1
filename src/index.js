@@ -18,10 +18,6 @@ connectDB()
     console.log("MONGO db connection failed !!! ", err);
 })
 
-app.on("error", (error) => {
-    console.log("Server error:", error);
-    process.exit(1); // Exit the process if any server error occurs
-});
 
 
 
