@@ -61,7 +61,7 @@ userSchema.methods.isPasswordCorrect = async function (password){
 }
 
 userSchema.methods.generateAccessToken = function(){
-  return jwt.sign(
+  return Jwt.sign(
     {
       _id: this._id,
       email: this.email,
